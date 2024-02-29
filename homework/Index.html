@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona o robotyce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" id="loginInput" placeholder="Wprowadź swój login">
+    <div id="loginMessage" style="display: none;"></div>
+    <h1>Robotyka</h1>
+    <nav>
+        <ul>
+            <li><a href="Page 2.html">Robotyka przemysłowa</a></li>
+            <li><a href="Page 3.html">Robotyka medyczna</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h2>O różnych dziedzinach robotyki</h2>
+        <p class="red_text">Poznaj różne dziedziny robotyki oraz ich znaczenie w dzisiejszym świecie.</p>
+        <p>Zacznijmy od regionów.</p>
+        <p>Robotyka obejmuje wiele różnych dziedzin.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/HONDA_ASIMO.jpg/330px-HONDA_ASIMO.jpg" width="250px" height="200px" alt="Mapa dziedzin robotyki">
+    </div>
+    <ol>
+        <li><a href="https://en.wikipedia.org/wiki/Industrial_robotics">Robotyka przemysłowa</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Medical_robotics">Robotyka medyczna</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Sztuczna inteligencja</a></li>
+    </ol>
+
+    <script>
+        document.getElementById("loginInput").addEventListener("input", function() {
+            var login = this.value;
+            document.getElementById("loginMessage").innerText = "Twój login: " + login;
+            document.getElementById("loginMessage").style.display = "block";
+        });
+    </script>
+</body>
+</html>
